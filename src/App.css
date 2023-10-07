@@ -1,12 +1,12 @@
 /* make variables */
 :root {
   --lightgray: #D9D9D9;
-  --gray: #9c9c9c;
-  --orange: #f48915;
+  --gray: #ffffff;
+  --orange: #0238f9;
   --darkGrey: #464D53;
   --caloryCard: #656565;
-  --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
-  --appColor:  #3c3f45;
+  --planCard: linear-gradient(210.41deg, #0b0899 1.14%, #0099ff 100.75%);
+  --appColor:  #65befa;
 }
 
 .App {
@@ -20,4 +20,33 @@
 }
 ::-webkit-scrollbar{
   display: none;
+}
+.stroke-text{
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.btn{
+  background-color: white;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: 4px solid transparent;
+  transition: 300ms all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.blur{
+  background: rgba(6, 6, 147, 0.69);
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: -9;
 }
